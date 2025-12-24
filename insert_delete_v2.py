@@ -1,7 +1,7 @@
 import sqlite3
 import sys
-print("Enter the database name:")
 database = sys.argv[1]
+print(f"your database is {database}.")
 connection=sqlite3.connect(database)
 cursor=connection.cursor()
 print('1. Insert records\n2. Delete records')
